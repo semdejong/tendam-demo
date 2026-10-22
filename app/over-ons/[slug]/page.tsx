@@ -2,8 +2,28 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/ui/PageHero";
+import PageClose from "@/components/site/PageClose";
 import { ERKENNINGEN, WERKWIJZE } from "@/lib/site";
 import { aboutPages } from "@/lib/copy/about";
+
+const beelden: Record<string, { src: string; alt: string }> = {
+  geschiedenis: {
+    src: "/fotos/bedrijf/bus-bij-restauratie.jpg",
+    alt: "Rode bedrijfsbus van Ten Dam voor een gerestaureerd pand",
+  },
+  "in-de-media": {
+    src: "/fotos/bedrijf/horeca-huis-vermeer.jpg",
+    alt: "Hotel Huis Vermeer in Deventer, een horecaproject van Ten Dam",
+  },
+  "ons-team": {
+    src: "/fotos/bedrijf/pand-delden-busjes.jpg",
+    alt: "Bedrijfspand van Ten Dam op het industrieterrein van Delden, met de bedrijfsbusjes ervoor",
+  },
+  mvo: {
+    src: "/fotos/bedrijf/zonnepanelen-luchtfoto.jpg",
+    alt: "Luchtfoto van een boerderij of schuur met zonnepanelen van Ten Dam",
+  },
+};
 
 export function generateStaticParams() {
   return Object.keys(aboutPages).map((slug) => ({ slug }));
@@ -24,6 +44,9 @@ export default async function AboutSlug({ params }: { params: Promise<{ slug: st
     <>
       <PageHero section={slug} eyebrow="Over ons" title={page.title} text={page.description} />
       <section data-section={`${slug}-inhoud`} className="mx-auto max-w-3xl space-y-4 px-5 py-12">
+        {beelden[slug] ? (
+          <img src={beelden[slug].src} alt={beelden[slug].alt} width={1400} height={900} loading="lazy" className="h-auto w-full object-cover" />
+        ) : null}
         {page.paragraphs.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}
@@ -65,6 +88,7 @@ export default async function AboutSlug({ params }: { params: Promise<{ slug: st
           </>
         ) : null}
       </section>
+      <PageClose section={slug} />
     </>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import PageHero from "@/components/ui/PageHero";
 import { CategoryChips, ProjectGrid } from "@/components/projects/ProjectList";
+import PageClose from "@/components/site/PageClose";
 import { categories, categoryIntro, projecten } from "@/lib/projects";
 
 export function generateStaticParams() {
@@ -27,6 +28,7 @@ export default async function CategoriePage({ params }: { params: Promise<{ cate
         <CategoryChips active={category.slug} />
         <ProjectGrid items={items} />
       </section>
+      <PageClose section="projectcategorie" />
     </>
   );
 }

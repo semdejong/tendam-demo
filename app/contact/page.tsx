@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/ui/PageHero";
 import MailForm from "@/components/forms/MailForm";
+import PageClose from "@/components/site/PageClose";
 import { MAIL_INFO, MAIL_SERVICE, PHONE, SHOP_HOURS, SHOP_PHONE, WHATSAPP } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -71,6 +72,7 @@ export default function ContactPage() {
           ]}
         />
       </section>
+      <PageClose section="contact" />
     </>
   );
 }

@@ -18,5 +18,14 @@ export default async function DienstPage({ params }: { params: Promise<{ slug: s
   const { slug } = await params;
   const dienst = getDienst(slug);
   if (!dienst) notFound();
-  return <ServiceView eyebrow="Diensten" title={dienst.title} lead={dienst.lead} blocks={dienst.blocks} section={dienst.slug} />;
+  return (
+    <ServiceView
+      eyebrow="Diensten"
+      title={dienst.title}
+      lead={dienst.lead}
+      blocks={dienst.blocks}
+      section={dienst.slug}
+      projects={dienst.projects}
+    />
+  );
 }

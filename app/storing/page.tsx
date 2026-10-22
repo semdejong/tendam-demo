@@ -4,6 +4,7 @@ import Checks from "@/components/storing/Checks";
 import MailForm from "@/components/forms/MailForm";
 import { PHONE, MAIL_SERVICE } from "@/lib/site";
 import { bijvullen, ontluchten } from "@/lib/copy/steps";
+import PageClose from "@/components/site/PageClose";
 
 export const metadata: Metadata = {
   title: "Storing",
@@ -161,6 +162,7 @@ export default function StoringPage() {
           </div>
         </div>
       </section>
+      <PageClose section="storing" />
     </>
   );
 }

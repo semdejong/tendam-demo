@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { SHOP_HOURS, SHOP_PHONE } from "@/lib/site";
 import PageHero from "@/components/ui/PageHero";
+import PageClose from "@/components/site/PageClose";
 
 export const metadata: Metadata = {
   title: "IJzerwarenwinkel",
@@ -74,6 +75,24 @@ export default function WinkelPage() {
           />
         </div>
       </section>
+      <section data-section="winkel-combinatie" className="mx-auto grid max-w-6xl items-center gap-8 px-5 py-12 md:grid-cols-2">
+        <img
+          src="/fotos/bedrijf/winkel-collage.jpg"
+          alt="Collage van de ijzerwarenwinkel van Ten Dam: schappen, sanitair en gereedschap"
+          width={1400}
+          height={900}
+          loading="lazy"
+          className="h-auto w-full object-cover"
+        />
+        <div>
+          <h2 className="text-2xl font-semibold">Winkel en installatiebedrijf in één pand</h2>
+          <p className="mt-3">
+            Door de combinatie met het installatiebedrijf ligt er ook loodgieters- en elektromateriaal, en kunt u daar advies bij krijgen. De winkel is makkelijk vindbaar aan de rand van Delden en heeft ruime parkeergelegenheid.
+          </p>
+          <p className="mt-3">Sleutelservice; klaar terwijl u wacht.</p>
+        </div>
+      </section>
+      <PageClose section="winkel" />
     </>
   );
 }

@@ -83,6 +83,22 @@ h4 {
   }
 }
 
+.sheet-bg {
+  background-image:
+    linear-gradient(to right, rgb(139 178 220 / 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(139 178 220 / 0.45) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.blueprint {
+  background-color: #1e2f5c;
+  background-image:
+    linear-gradient(rgb(30 47 92 / 0.92), rgb(30 47 92 / 0.94)),
+    url("/fotos/bedrijf/blauwdruk-textuur.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

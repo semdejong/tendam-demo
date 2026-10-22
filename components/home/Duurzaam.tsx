@@ -9,7 +9,7 @@ const cards = [
 
 export default function Duurzaam() {
   return (
-    <section data-section="duurzaam" className="bg-navy text-white">
+    <section data-section="duurzaam" className="blueprint text-white">
       <div className="mx-auto max-w-6xl px-5 py-16">
         <p className="text-xs font-semibold uppercase tracking-[0.16em] text-water">Duurzaam bouwen en verbouwen</p>
         <h2 className="mt-2 max-w-3xl text-3xl font-semibold md:text-4xl">Van zonnepanelen tot accu, onder één dak.</h2>

@@ -18,5 +18,15 @@ export default async function DuurzaamKind({ params }: { params: Promise<{ slug:
   const { slug } = await params;
   const page = duurzaamKinderen[slug];
   if (!page) notFound();
-  return <ServiceView eyebrow="Duurzaam" title={page.title} lead={page.lead} blocks={page.blocks} section={slug} />;
+  return (
+    <ServiceView
+      eyebrow="Duurzaam"
+      title={page.title}
+      lead={page.lead}
+      blocks={page.blocks}
+      section={slug}
+      projects={page.projects}
+      image={page.image}
+    />
+  );
 }

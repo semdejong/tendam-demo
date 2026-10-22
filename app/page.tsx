@@ -1,6 +1,7 @@
 import Hero from "@/components/home/Hero";
 import Routes from "@/components/home/Routes";
 import Disciplines from "@/components/home/Disciplines";
+import Triptych from "@/components/home/Triptych";
 import Duurzaam from "@/components/home/Duurzaam";
 import ProjectSelect from "@/components/home/ProjectSelect";
 import Werkwijze from "@/components/home/Werkwijze";
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Routes />
       <Disciplines />
+      <Triptych />
       <Duurzaam />
       <ProjectSelect />
       <Werkwijze />
