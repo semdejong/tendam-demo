@@ -27,7 +27,7 @@ export default function WinkelPage() {
         section="winkel-hero"
         eyebrow="Winkel"
         title="IJzerwarenwinkel Ten Dam"
-        text="Door de combinatie met het installatiebedrijf vindt u ook loodgieters- en elektromateriaal, en advies daarbij. Aan de rand van Delden, met ruime parkeergelegenheid."
+        text="Door de combinatie met het installatiebedrijf vindt u ook loodgietersmateriaal en elektromateriaal, en advies daarbij. Aan de rand van Delden, met ruime parkeergelegenheid."
       >
         <a href={SHOP_PHONE.tel} className="nums inline-flex min-h-11 items-center bg-navy px-5 font-semibold text-white">
           Winkel: {SHOP_PHONE.display}
@@ -87,7 +87,7 @@ export default function WinkelPage() {
         <div>
           <h2 className="text-2xl font-semibold">Winkel en installatiebedrijf in één pand</h2>
           <p className="mt-3">
-            Door de combinatie met het installatiebedrijf ligt er ook loodgieters- en elektromateriaal, en kunt u daar advies bij krijgen. De winkel is makkelijk vindbaar aan de rand van Delden en heeft ruime parkeergelegenheid.
+            Door de combinatie met het installatiebedrijf ligt er ook loodgietersmateriaal en elektromateriaal, en kunt u daar advies bij krijgen. De winkel is makkelijk vindbaar aan de rand van Delden en heeft ruime parkeergelegenheid.
           </p>
           <p className="mt-3">Sleutelservice; klaar terwijl u wacht.</p>
         </div>

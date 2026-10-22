@@ -18,7 +18,7 @@ export default function DuurzaamPage() {
       projects="zonnepanelen"
       image={{
         src: "/fotos/bedrijf/zonnepanelen-luchtfoto.jpg",
-        alt: "Luchtfoto van een boerderij of schuur met zonnepanelen van Ten Dam",
+        alt: "Luchtfoto van zonnepanelen op het dak van een gebouw naast sportvelden",
       }}
     />
   );

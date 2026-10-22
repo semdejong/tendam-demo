@@ -18,7 +18,7 @@ const routes = [
   },
   {
     title: "Ik kom naar de winkel",
-    text: "Ijzerwaren, sleutelservice en installatiemateriaal, aan de rand van Delden met ruime parkeergelegenheid.",
+    text: "IJzerwaren, sleutelservice en installatiemateriaal, aan de rand van Delden met ruime parkeergelegenheid.",
     href: "/winkel",
     cta: "Openingstijden en assortiment",
     tone: "blue" as const,

@@ -7,7 +7,7 @@ export default function Winkel() {
       <div className="mx-auto grid max-w-6xl items-center gap-8 px-5 py-16 md:grid-cols-2">
         <img
           src="/fotos/bedrijf/winkel-schappen.jpg"
-          alt="Ijzerwarenwinkel van Ten Dam: wand met gereedschap, borstels en kwasten"
+          alt="IJzerwarenwinkel van Ten Dam: wand met gereedschap, borstels en kwasten"
           width={1400}
           height={900}
           loading="lazy"
@@ -17,7 +17,7 @@ export default function Winkel() {
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-blue">De winkel</p>
           <h2 className="mt-2 text-3xl font-semibold md:text-4xl">Sleutelservice, klaar terwijl u wacht.</h2>
           <p className="mt-4 text-navy/85">
-            Gereedschap, pluggen en schroeven, lampen, waterontharderzout, verf, ladders, sloten en loodgieters- en elektromateriaal. Makkelijk vindbaar aan de rand van Delden, met ruime parkeergelegenheid.
+            Gereedschap, pluggen en schroeven, lampen, waterontharderzout, verf, ladders, sloten, loodgietersmateriaal en elektromateriaal. Makkelijk vindbaar aan de rand van Delden, met ruime parkeergelegenheid.
           </p>
           <ul className="mt-4 space-y-1">
             {SHOP_HOURS.map((row) => (

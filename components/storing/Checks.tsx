@@ -27,7 +27,7 @@ export default function Checks() {
           type="button"
           role="tab"
           aria-selected={tab === "stroom"}
-          className={`min-h-14 px-4 text-left text-lg font-semibold ${tab === "stroom" ? "bg-navy text-white" : "bg-white text-navy"}`}
+          className={`min-h-14 border px-4 text-left text-lg font-semibold ${tab === "stroom" ? "border-navy bg-navy text-white" : "border-navy/20 bg-white text-navy"}`}
           onClick={() => setTab("stroom")}
         >
           Stroomstoring
@@ -36,7 +36,7 @@ export default function Checks() {
           type="button"
           role="tab"
           aria-selected={tab === "cv"}
-          className={`min-h-14 px-4 text-left text-lg font-semibold ${tab === "cv" ? "bg-navy text-white" : "bg-white text-navy"}`}
+          className={`min-h-14 border px-4 text-left text-lg font-semibold ${tab === "cv" ? "border-navy bg-navy text-white" : "border-navy/20 bg-white text-navy"}`}
           onClick={() => setTab("cv")}
         >
           Storing van de cv-ketel

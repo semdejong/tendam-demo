@@ -4,10 +4,10 @@ import { MAIL_INFO, MAIL_SERVICE, PHONE, SHOP_PHONE, SITEMAP, SOCIALS, WHATSAPP 
 
 export default function Footer() {
   return (
-    <footer data-section="footer" className="bg-navy text-white">
+    <footer data-section="footer" className="border-t-[6px] border-flame bg-[#152444] text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-5 py-14 md:grid-cols-12">
         <div className="md:col-span-4">
-          <Logo className="h-16 w-auto bg-white p-1" />
+          <Logo className="w-fit bg-white p-1.5" />
           <p className="mt-4 max-w-sm text-white/85">
             Totaalinstallateur en ijzerwarenwinkel in Delden. Vuur, stroom en water, sinds 1983.
           </p>
