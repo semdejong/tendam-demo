@@ -33,9 +33,9 @@ export default function MobileNav() {
       role="dialog"
       aria-modal="true"
       aria-label="Menu"
-      className="fixed inset-0 z-[70] overflow-y-auto bg-white px-5 pb-16 pt-4"
+      className="fixed inset-0 z-[70] overflow-y-auto bg-white px-5 pb-16 pt-12"
     >
-      <div className="mb-2 flex items-center justify-between pr-36">
+      <div className="mb-2 flex items-center justify-between">
         <p className="text-sm font-semibold uppercase tracking-[0.16em] text-blue">Menu</p>
         <button
           ref={closeRef}
